@@ -499,6 +499,34 @@ design rules under a new name.</description>
 <vertex x="-6.35" y="11.43"/>
 </polygon>
 <contactref element="U$17" pad="GND"/>
+<contactref element="RJ45_POE_2" pad="8"/>
+<contactref element="RJ45_POE_2" pad="7"/>
+<contactref element="RJ45_ETH_2" pad="7"/>
+<contactref element="RJ45_ETH_2" pad="8"/>
+<contactref element="RJ45_POE_3" pad="8"/>
+<contactref element="RJ45_POE_3" pad="7"/>
+<contactref element="RJ45_ETH_3" pad="7"/>
+<contactref element="RJ45_ETH_3" pad="8"/>
+<contactref element="RJ45_POE_4" pad="8"/>
+<contactref element="RJ45_POE_4" pad="7"/>
+<contactref element="RJ45_ETH_4" pad="7"/>
+<contactref element="RJ45_ETH_4" pad="8"/>
+<contactref element="RJ45_POE_5" pad="8"/>
+<contactref element="RJ45_POE_5" pad="7"/>
+<contactref element="RJ45_ETH_5" pad="7"/>
+<contactref element="RJ45_ETH_5" pad="8"/>
+<contactref element="RJ45_POE_6" pad="8"/>
+<contactref element="RJ45_POE_6" pad="7"/>
+<contactref element="RJ45_ETH_6" pad="7"/>
+<contactref element="RJ45_ETH_6" pad="8"/>
+<contactref element="RJ45_POE_7" pad="8"/>
+<contactref element="RJ45_POE_7" pad="7"/>
+<contactref element="RJ45_ETH_7" pad="7"/>
+<contactref element="RJ45_ETH_7" pad="8"/>
+<contactref element="RJ45_POE_8" pad="8"/>
+<contactref element="RJ45_POE_8" pad="7"/>
+<contactref element="RJ45_ETH_8" pad="7"/>
+<contactref element="RJ45_ETH_8" pad="8"/>
 </signal>
 <signal name="RX_N_1">
 <contactref element="RJ45_ETH_1" pad="6"/>
@@ -554,14 +582,119 @@ design rules under a new name.</description>
 <vertex x="-6.604" y="1.7145"/>
 </polygon>
 <contactref element="U$17" pad="12V"/>
+<contactref element="RJ45_POE_7" pad="5"/>
+<contactref element="RJ45_POE_7" pad="4"/>
+<contactref element="RJ45_POE_8" pad="5"/>
+<contactref element="RJ45_POE_8" pad="4"/>
+<contactref element="RJ45_POE_6" pad="5"/>
+<contactref element="RJ45_POE_6" pad="4"/>
+<contactref element="RJ45_POE_5" pad="5"/>
+<contactref element="RJ45_POE_5" pad="4"/>
+<contactref element="RJ45_POE_4" pad="5"/>
+<contactref element="RJ45_POE_4" pad="4"/>
+<contactref element="RJ45_POE_3" pad="5"/>
+<contactref element="RJ45_POE_3" pad="4"/>
+<contactref element="RJ45_POE_2" pad="5"/>
+<contactref element="RJ45_POE_2" pad="4"/>
 </signal>
 <signal name="TX_P_8">
+<contactref element="RJ45_ETH_8" pad="1"/>
+<contactref element="RJ45_POE_8" pad="1"/>
+<wire x1="147.955" y1="14.18" x2="147.955" y2="17.145" width="0.254" layer="1"/>
+<wire x1="150.622" y1="19.812" x2="147.955" y2="17.145" width="0.254" layer="1"/>
+<wire x1="150.622" y1="19.812" x2="153.162" y2="19.812" width="0.254" layer="1"/>
+<wire x1="154.305" y1="20.955" x2="153.162" y2="19.812" width="0.254" layer="1"/>
+<wire x1="154.305" y1="20.955" x2="154.305" y2="21.9075" width="0.254" layer="1"/>
+<wire x1="154.305" y1="21.9075" x2="156.21" y2="23.8125" width="0.254" layer="1"/>
+<wire x1="156.21" y1="23.8125" x2="156.7375" y2="23.8125" width="0.254" layer="1"/>
+<wire x1="156.7375" y1="23.8125" x2="156.845" y2="23.92" width="0.254" layer="1"/>
 </signal>
 <signal name="TX_N_8">
+<contactref element="RJ45_ETH_8" pad="2"/>
+<contactref element="RJ45_POE_8" pad="2"/>
+<wire x1="149.225" y1="16.72" x2="149.225" y2="17.145" width="0.254" layer="1"/>
+<wire x1="149.225" y1="17.145" x2="151.13" y2="19.05" width="0.254" layer="1"/>
+<wire x1="156.718" y1="19.05" x2="157.226" y2="19.558" width="0.254" layer="1"/>
+<wire x1="157.226" y1="19.558" x2="157.226" y2="19.812" width="0.254" layer="1"/>
+<wire x1="157.226" y1="19.812" x2="156.972" y2="20.066" width="0.254" layer="1"/>
+<wire x1="156.972" y1="20.066" x2="156.972" y2="20.32" width="0.254" layer="1"/>
+<wire x1="156.972" y1="20.32" x2="157.226" y2="20.574" width="0.254" layer="1"/>
+<wire x1="157.226" y1="20.574" x2="157.226" y2="20.828" width="0.254" layer="1"/>
+<wire x1="157.226" y1="20.828" x2="156.972" y2="21.082" width="0.254" layer="1"/>
+<wire x1="156.972" y1="21.082" x2="156.972" y2="21.336" width="0.254" layer="1"/>
+<wire x1="156.972" y1="21.336" x2="157.226" y2="21.59" width="0.254" layer="1"/>
+<wire x1="157.226" y1="21.59" x2="157.226" y2="21.844" width="0.254" layer="1"/>
+<wire x1="157.226" y1="21.844" x2="156.718" y2="22.352" width="0.254" layer="1"/>
+<wire x1="156.718" y1="22.352" x2="156.21" y2="22.352" width="0.254" layer="1"/>
+<wire x1="156.21" y1="22.352" x2="155.702" y2="21.844" width="0.254" layer="1"/>
+<wire x1="155.702" y1="21.844" x2="155.702" y2="21.507" width="0.254" layer="1"/>
+<wire x1="155.702" y1="21.507" x2="155.575" y2="21.38" width="0.254" layer="1"/>
+<wire x1="151.13" y1="19.05" x2="154.1145" y2="19.05" width="0.254" layer="1"/>
+<wire x1="154.94" y1="19.05" x2="155.2575" y2="19.05" width="0.254" layer="1"/>
+<wire x1="156.21" y1="19.05" x2="156.718" y2="19.05" width="0.254" layer="1"/>
+<wire x1="154.1145" y1="19.05" x2="154.3685" y2="19.304" width="0.254" layer="1"/>
+<wire x1="154.3685" y1="19.304" x2="154.686" y2="19.304" width="0.254" layer="1"/>
+<wire x1="154.94" y1="19.05" x2="154.686" y2="19.304" width="0.254" layer="1"/>
+<wire x1="155.2575" y1="19.05" x2="155.5115" y2="19.304" width="0.254" layer="1"/>
+<wire x1="155.5115" y1="19.304" x2="155.956" y2="19.304" width="0.254" layer="1"/>
+<wire x1="155.956" y1="19.304" x2="156.21" y2="19.05" width="0.254" layer="1"/>
 </signal>
 <signal name="RX_P_8">
+<contactref element="RJ45_ETH_8" pad="3"/>
+<contactref element="RJ45_POE_8" pad="3"/>
+<wire x1="150.495" y1="14.18" x2="150.495" y2="17.399" width="0.254" layer="1"/>
+<wire x1="150.495" y1="17.399" x2="151.384" y2="18.288" width="0.254" layer="1"/>
+<wire x1="155.0035" y1="25.146" x2="154.305" y2="24.4475" width="0.254" layer="1"/>
+<wire x1="154.305" y1="24.4475" x2="154.305" y2="23.92" width="0.254" layer="1"/>
+<wire x1="157.226" y1="25.146" x2="155.0035" y2="25.146" width="0.254" layer="1"/>
+<wire x1="157.226" y1="25.146" x2="157.988" y2="24.384" width="0.254" layer="1"/>
+<wire x1="151.384" y1="18.288" x2="157.226" y2="18.288" width="0.254" layer="1"/>
+<wire x1="157.226" y1="18.288" x2="157.988" y2="19.05" width="0.254" layer="1"/>
+<wire x1="157.988" y1="19.05" x2="157.988" y2="24.384" width="0.254" layer="1"/>
 </signal>
 <signal name="RX_N_8">
+<contactref element="RJ45_ETH_8" pad="6"/>
+<contactref element="RJ45_POE_8" pad="6"/>
+<wire x1="154.305" y1="17.653" x2="154.305" y2="16.72" width="0.254" layer="16"/>
+<wire x1="154.305" y1="17.653" x2="154.94" y2="18.288" width="0.254" layer="16"/>
+<wire x1="157.226" y1="18.288" x2="154.94" y2="18.288" width="0.254" layer="16"/>
+<wire x1="157.226" y1="18.288" x2="157.48" y2="18.542" width="0.254" layer="16"/>
+<wire x1="157.48" y1="18.542" x2="157.48" y2="19.812" width="0.254" layer="16"/>
+<wire x1="157.48" y1="19.812" x2="157.226" y2="20.066" width="0.254" layer="16"/>
+<wire x1="157.226" y1="20.066" x2="156.972" y2="20.066" width="0.254" layer="16"/>
+<wire x1="156.972" y1="20.066" x2="156.718" y2="19.812" width="0.254" layer="16"/>
+<wire x1="156.718" y1="19.812" x2="156.718" y2="19.05" width="0.254" layer="16"/>
+<wire x1="156.718" y1="19.05" x2="156.464" y2="18.796" width="0.254" layer="16"/>
+<wire x1="156.464" y1="18.796" x2="156.21" y2="18.796" width="0.254" layer="16"/>
+<wire x1="156.21" y1="18.796" x2="155.956" y2="19.05" width="0.254" layer="16"/>
+<wire x1="155.956" y1="19.05" x2="155.956" y2="19.812" width="0.254" layer="16"/>
+<wire x1="155.956" y1="19.812" x2="155.702" y2="20.066" width="0.254" layer="16"/>
+<wire x1="155.702" y1="20.066" x2="155.448" y2="20.066" width="0.254" layer="16"/>
+<wire x1="155.448" y1="20.066" x2="155.194" y2="19.812" width="0.254" layer="16"/>
+<wire x1="155.194" y1="19.812" x2="155.194" y2="19.05" width="0.254" layer="16"/>
+<wire x1="155.194" y1="19.05" x2="154.94" y2="18.796" width="0.254" layer="16"/>
+<wire x1="154.94" y1="18.796" x2="154.686" y2="18.796" width="0.254" layer="16"/>
+<wire x1="154.686" y1="18.796" x2="154.432" y2="19.05" width="0.254" layer="16"/>
+<wire x1="154.432" y1="19.05" x2="154.432" y2="19.812" width="0.254" layer="16"/>
+<wire x1="154.432" y1="19.812" x2="154.178" y2="20.066" width="0.254" layer="16"/>
+<wire x1="154.178" y1="20.066" x2="153.924" y2="20.066" width="0.254" layer="16"/>
+<wire x1="153.924" y1="20.066" x2="153.67" y2="19.812" width="0.254" layer="16"/>
+<wire x1="153.67" y1="19.812" x2="153.67" y2="19.05" width="0.254" layer="16"/>
+<wire x1="153.67" y1="19.05" x2="153.416" y2="18.796" width="0.254" layer="16"/>
+<wire x1="153.416" y1="18.796" x2="153.162" y2="18.796" width="0.254" layer="16"/>
+<wire x1="153.162" y1="18.796" x2="152.908" y2="19.05" width="0.254" layer="16"/>
+<wire x1="152.908" y1="19.05" x2="152.908" y2="19.812" width="0.254" layer="16"/>
+<wire x1="152.654" y1="20.066" x2="152.908" y2="19.812" width="0.254" layer="16"/>
+<wire x1="152.654" y1="20.066" x2="152.4" y2="20.066" width="0.254" layer="16"/>
+<wire x1="152.4" y1="20.066" x2="152.146" y2="19.812" width="0.254" layer="16"/>
+<wire x1="152.146" y1="19.812" x2="152.146" y2="19.05" width="0.254" layer="16"/>
+<wire x1="152.146" y1="19.05" x2="151.892" y2="18.796" width="0.254" layer="16"/>
+<wire x1="151.892" y1="18.796" x2="151.638" y2="18.796" width="0.254" layer="16"/>
+<wire x1="151.638" y1="18.796" x2="151.384" y2="19.05" width="0.254" layer="16"/>
+<wire x1="151.384" y1="19.05" x2="151.384" y2="19.812" width="0.254" layer="16"/>
+<wire x1="151.384" y1="19.812" x2="150.622" y2="20.574" width="0.254" layer="16"/>
+<wire x1="150.622" y1="20.574" x2="150.622" y2="21.253" width="0.254" layer="16"/>
+<wire x1="150.622" y1="21.253" x2="150.495" y2="21.38" width="0.254" layer="16"/>
 </signal>
 <signal name="TX_P_2">
 <contactref element="RJ45_ETH_2" pad="1"/>
@@ -618,12 +751,6 @@ design rules under a new name.</description>
 <wire x1="35.306" y1="18.288" x2="36.068" y2="19.05" width="0.254" layer="1"/>
 <wire x1="36.068" y1="19.05" x2="36.068" y2="24.384" width="0.254" layer="1"/>
 </signal>
-<signal name="GND1">
-<contactref element="RJ45_POE_2" pad="8"/>
-<contactref element="RJ45_POE_2" pad="7"/>
-<contactref element="RJ45_ETH_2" pad="7"/>
-<contactref element="RJ45_ETH_2" pad="8"/>
-</signal>
 <signal name="RX_N_2">
 <contactref element="RJ45_ETH_2" pad="6"/>
 <contactref element="RJ45_POE_2" pad="6"/>
@@ -667,10 +794,6 @@ design rules under a new name.</description>
 <wire x1="29.464" y1="19.812" x2="28.702" y2="20.574" width="0.254" layer="16"/>
 <wire x1="28.702" y1="20.574" x2="28.702" y2="21.253" width="0.254" layer="16"/>
 <wire x1="28.702" y1="21.253" x2="28.575" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V1">
-<contactref element="RJ45_POE_2" pad="5"/>
-<contactref element="RJ45_POE_2" pad="4"/>
 </signal>
 <signal name="TX_P_3">
 <contactref element="RJ45_ETH_3" pad="1"/>
@@ -727,12 +850,6 @@ design rules under a new name.</description>
 <wire x1="55.626" y1="18.288" x2="56.388" y2="19.05" width="0.254" layer="1"/>
 <wire x1="56.388" y1="19.05" x2="56.388" y2="24.384" width="0.254" layer="1"/>
 </signal>
-<signal name="GND2">
-<contactref element="RJ45_POE_3" pad="8"/>
-<contactref element="RJ45_POE_3" pad="7"/>
-<contactref element="RJ45_ETH_3" pad="7"/>
-<contactref element="RJ45_ETH_3" pad="8"/>
-</signal>
 <signal name="RX_N_3">
 <contactref element="RJ45_ETH_3" pad="6"/>
 <contactref element="RJ45_POE_3" pad="6"/>
@@ -776,10 +893,6 @@ design rules under a new name.</description>
 <wire x1="49.784" y1="19.812" x2="49.022" y2="20.574" width="0.254" layer="16"/>
 <wire x1="49.022" y1="20.574" x2="49.022" y2="21.253" width="0.254" layer="16"/>
 <wire x1="49.022" y1="21.253" x2="48.895" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V2">
-<contactref element="RJ45_POE_3" pad="5"/>
-<contactref element="RJ45_POE_3" pad="4"/>
 </signal>
 <signal name="TX_P_4">
 <contactref element="RJ45_ETH_4" pad="1"/>
@@ -836,12 +949,6 @@ design rules under a new name.</description>
 <wire x1="75.946" y1="18.288" x2="76.708" y2="19.05" width="0.254" layer="1"/>
 <wire x1="76.708" y1="19.05" x2="76.708" y2="24.384" width="0.254" layer="1"/>
 </signal>
-<signal name="GND3">
-<contactref element="RJ45_POE_4" pad="8"/>
-<contactref element="RJ45_POE_4" pad="7"/>
-<contactref element="RJ45_ETH_4" pad="7"/>
-<contactref element="RJ45_ETH_4" pad="8"/>
-</signal>
 <signal name="RX_N_4">
 <contactref element="RJ45_ETH_4" pad="6"/>
 <contactref element="RJ45_POE_4" pad="6"/>
@@ -885,10 +992,6 @@ design rules under a new name.</description>
 <wire x1="70.104" y1="19.812" x2="69.342" y2="20.574" width="0.254" layer="16"/>
 <wire x1="69.342" y1="20.574" x2="69.342" y2="21.253" width="0.254" layer="16"/>
 <wire x1="69.342" y1="21.253" x2="69.215" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V3">
-<contactref element="RJ45_POE_4" pad="5"/>
-<contactref element="RJ45_POE_4" pad="4"/>
 </signal>
 <signal name="TX_P_5">
 <contactref element="RJ45_ETH_5" pad="1"/>
@@ -945,12 +1048,6 @@ design rules under a new name.</description>
 <wire x1="96.266" y1="18.288" x2="97.028" y2="19.05" width="0.254" layer="1"/>
 <wire x1="97.028" y1="19.05" x2="97.028" y2="24.384" width="0.254" layer="1"/>
 </signal>
-<signal name="GND4">
-<contactref element="RJ45_POE_5" pad="8"/>
-<contactref element="RJ45_POE_5" pad="7"/>
-<contactref element="RJ45_ETH_5" pad="7"/>
-<contactref element="RJ45_ETH_5" pad="8"/>
-</signal>
 <signal name="RX_N_5">
 <contactref element="RJ45_ETH_5" pad="6"/>
 <contactref element="RJ45_POE_5" pad="6"/>
@@ -994,10 +1091,6 @@ design rules under a new name.</description>
 <wire x1="90.424" y1="19.812" x2="89.662" y2="20.574" width="0.254" layer="16"/>
 <wire x1="89.662" y1="20.574" x2="89.662" y2="21.253" width="0.254" layer="16"/>
 <wire x1="89.662" y1="21.253" x2="89.535" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V4">
-<contactref element="RJ45_POE_5" pad="5"/>
-<contactref element="RJ45_POE_5" pad="4"/>
 </signal>
 <signal name="TX_P_6">
 <contactref element="RJ45_ETH_6" pad="1"/>
@@ -1054,12 +1147,6 @@ design rules under a new name.</description>
 <wire x1="116.586" y1="18.288" x2="117.348" y2="19.05" width="0.254" layer="1"/>
 <wire x1="117.348" y1="19.05" x2="117.348" y2="24.384" width="0.254" layer="1"/>
 </signal>
-<signal name="GND5">
-<contactref element="RJ45_POE_6" pad="8"/>
-<contactref element="RJ45_POE_6" pad="7"/>
-<contactref element="RJ45_ETH_6" pad="7"/>
-<contactref element="RJ45_ETH_6" pad="8"/>
-</signal>
 <signal name="RX_N_6">
 <contactref element="RJ45_ETH_6" pad="6"/>
 <contactref element="RJ45_POE_6" pad="6"/>
@@ -1103,10 +1190,6 @@ design rules under a new name.</description>
 <wire x1="110.744" y1="19.812" x2="109.982" y2="20.574" width="0.254" layer="16"/>
 <wire x1="109.982" y1="20.574" x2="109.982" y2="21.253" width="0.254" layer="16"/>
 <wire x1="109.982" y1="21.253" x2="109.855" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V5">
-<contactref element="RJ45_POE_6" pad="5"/>
-<contactref element="RJ45_POE_6" pad="4"/>
 </signal>
 <signal name="TX_P_7">
 <contactref element="RJ45_ETH_7" pad="1"/>
@@ -1163,12 +1246,6 @@ design rules under a new name.</description>
 <wire x1="136.906" y1="18.288" x2="137.668" y2="19.05" width="0.254" layer="1"/>
 <wire x1="137.668" y1="19.05" x2="137.668" y2="24.384" width="0.254" layer="1"/>
 </signal>
-<signal name="GND6">
-<contactref element="RJ45_POE_7" pad="8"/>
-<contactref element="RJ45_POE_7" pad="7"/>
-<contactref element="RJ45_ETH_7" pad="7"/>
-<contactref element="RJ45_ETH_7" pad="8"/>
-</signal>
 <signal name="RX_N_7">
 <contactref element="RJ45_ETH_7" pad="6"/>
 <contactref element="RJ45_POE_7" pad="6"/>
@@ -1212,119 +1289,6 @@ design rules under a new name.</description>
 <wire x1="131.064" y1="19.812" x2="130.302" y2="20.574" width="0.254" layer="16"/>
 <wire x1="130.302" y1="20.574" x2="130.302" y2="21.253" width="0.254" layer="16"/>
 <wire x1="130.302" y1="21.253" x2="130.175" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V6">
-<contactref element="RJ45_POE_7" pad="5"/>
-<contactref element="RJ45_POE_7" pad="4"/>
-</signal>
-<signal name="TX_P_9">
-<contactref element="RJ45_ETH_8" pad="1"/>
-<contactref element="RJ45_POE_8" pad="1"/>
-<wire x1="147.955" y1="14.18" x2="147.955" y2="17.145" width="0.254" layer="1"/>
-<wire x1="150.622" y1="19.812" x2="147.955" y2="17.145" width="0.254" layer="1"/>
-<wire x1="150.622" y1="19.812" x2="153.162" y2="19.812" width="0.254" layer="1"/>
-<wire x1="154.305" y1="20.955" x2="153.162" y2="19.812" width="0.254" layer="1"/>
-<wire x1="154.305" y1="20.955" x2="154.305" y2="21.9075" width="0.254" layer="1"/>
-<wire x1="154.305" y1="21.9075" x2="156.21" y2="23.8125" width="0.254" layer="1"/>
-<wire x1="156.21" y1="23.8125" x2="156.7375" y2="23.8125" width="0.254" layer="1"/>
-<wire x1="156.7375" y1="23.8125" x2="156.845" y2="23.92" width="0.254" layer="1"/>
-</signal>
-<signal name="TX_N_9">
-<contactref element="RJ45_ETH_8" pad="2"/>
-<contactref element="RJ45_POE_8" pad="2"/>
-<wire x1="149.225" y1="16.72" x2="149.225" y2="17.145" width="0.254" layer="1"/>
-<wire x1="149.225" y1="17.145" x2="151.13" y2="19.05" width="0.254" layer="1"/>
-<wire x1="156.718" y1="19.05" x2="157.226" y2="19.558" width="0.254" layer="1"/>
-<wire x1="157.226" y1="19.558" x2="157.226" y2="19.812" width="0.254" layer="1"/>
-<wire x1="157.226" y1="19.812" x2="156.972" y2="20.066" width="0.254" layer="1"/>
-<wire x1="156.972" y1="20.066" x2="156.972" y2="20.32" width="0.254" layer="1"/>
-<wire x1="156.972" y1="20.32" x2="157.226" y2="20.574" width="0.254" layer="1"/>
-<wire x1="157.226" y1="20.574" x2="157.226" y2="20.828" width="0.254" layer="1"/>
-<wire x1="157.226" y1="20.828" x2="156.972" y2="21.082" width="0.254" layer="1"/>
-<wire x1="156.972" y1="21.082" x2="156.972" y2="21.336" width="0.254" layer="1"/>
-<wire x1="156.972" y1="21.336" x2="157.226" y2="21.59" width="0.254" layer="1"/>
-<wire x1="157.226" y1="21.59" x2="157.226" y2="21.844" width="0.254" layer="1"/>
-<wire x1="157.226" y1="21.844" x2="156.718" y2="22.352" width="0.254" layer="1"/>
-<wire x1="156.718" y1="22.352" x2="156.21" y2="22.352" width="0.254" layer="1"/>
-<wire x1="156.21" y1="22.352" x2="155.702" y2="21.844" width="0.254" layer="1"/>
-<wire x1="155.702" y1="21.844" x2="155.702" y2="21.507" width="0.254" layer="1"/>
-<wire x1="155.702" y1="21.507" x2="155.575" y2="21.38" width="0.254" layer="1"/>
-<wire x1="151.13" y1="19.05" x2="154.1145" y2="19.05" width="0.254" layer="1"/>
-<wire x1="154.94" y1="19.05" x2="155.2575" y2="19.05" width="0.254" layer="1"/>
-<wire x1="156.21" y1="19.05" x2="156.718" y2="19.05" width="0.254" layer="1"/>
-<wire x1="154.1145" y1="19.05" x2="154.3685" y2="19.304" width="0.254" layer="1"/>
-<wire x1="154.3685" y1="19.304" x2="154.686" y2="19.304" width="0.254" layer="1"/>
-<wire x1="154.94" y1="19.05" x2="154.686" y2="19.304" width="0.254" layer="1"/>
-<wire x1="155.2575" y1="19.05" x2="155.5115" y2="19.304" width="0.254" layer="1"/>
-<wire x1="155.5115" y1="19.304" x2="155.956" y2="19.304" width="0.254" layer="1"/>
-<wire x1="155.956" y1="19.304" x2="156.21" y2="19.05" width="0.254" layer="1"/>
-</signal>
-<signal name="RX_P_9">
-<contactref element="RJ45_ETH_8" pad="3"/>
-<contactref element="RJ45_POE_8" pad="3"/>
-<wire x1="150.495" y1="14.18" x2="150.495" y2="17.399" width="0.254" layer="1"/>
-<wire x1="150.495" y1="17.399" x2="151.384" y2="18.288" width="0.254" layer="1"/>
-<wire x1="155.0035" y1="25.146" x2="154.305" y2="24.4475" width="0.254" layer="1"/>
-<wire x1="154.305" y1="24.4475" x2="154.305" y2="23.92" width="0.254" layer="1"/>
-<wire x1="157.226" y1="25.146" x2="155.0035" y2="25.146" width="0.254" layer="1"/>
-<wire x1="157.226" y1="25.146" x2="157.988" y2="24.384" width="0.254" layer="1"/>
-<wire x1="151.384" y1="18.288" x2="157.226" y2="18.288" width="0.254" layer="1"/>
-<wire x1="157.226" y1="18.288" x2="157.988" y2="19.05" width="0.254" layer="1"/>
-<wire x1="157.988" y1="19.05" x2="157.988" y2="24.384" width="0.254" layer="1"/>
-</signal>
-<signal name="GND7">
-<contactref element="RJ45_POE_8" pad="8"/>
-<contactref element="RJ45_POE_8" pad="7"/>
-<contactref element="RJ45_ETH_8" pad="7"/>
-<contactref element="RJ45_ETH_8" pad="8"/>
-</signal>
-<signal name="RX_N_9">
-<contactref element="RJ45_ETH_8" pad="6"/>
-<contactref element="RJ45_POE_8" pad="6"/>
-<wire x1="154.305" y1="17.653" x2="154.305" y2="16.72" width="0.254" layer="16"/>
-<wire x1="154.305" y1="17.653" x2="154.94" y2="18.288" width="0.254" layer="16"/>
-<wire x1="157.226" y1="18.288" x2="154.94" y2="18.288" width="0.254" layer="16"/>
-<wire x1="157.226" y1="18.288" x2="157.48" y2="18.542" width="0.254" layer="16"/>
-<wire x1="157.48" y1="18.542" x2="157.48" y2="19.812" width="0.254" layer="16"/>
-<wire x1="157.48" y1="19.812" x2="157.226" y2="20.066" width="0.254" layer="16"/>
-<wire x1="157.226" y1="20.066" x2="156.972" y2="20.066" width="0.254" layer="16"/>
-<wire x1="156.972" y1="20.066" x2="156.718" y2="19.812" width="0.254" layer="16"/>
-<wire x1="156.718" y1="19.812" x2="156.718" y2="19.05" width="0.254" layer="16"/>
-<wire x1="156.718" y1="19.05" x2="156.464" y2="18.796" width="0.254" layer="16"/>
-<wire x1="156.464" y1="18.796" x2="156.21" y2="18.796" width="0.254" layer="16"/>
-<wire x1="156.21" y1="18.796" x2="155.956" y2="19.05" width="0.254" layer="16"/>
-<wire x1="155.956" y1="19.05" x2="155.956" y2="19.812" width="0.254" layer="16"/>
-<wire x1="155.956" y1="19.812" x2="155.702" y2="20.066" width="0.254" layer="16"/>
-<wire x1="155.702" y1="20.066" x2="155.448" y2="20.066" width="0.254" layer="16"/>
-<wire x1="155.448" y1="20.066" x2="155.194" y2="19.812" width="0.254" layer="16"/>
-<wire x1="155.194" y1="19.812" x2="155.194" y2="19.05" width="0.254" layer="16"/>
-<wire x1="155.194" y1="19.05" x2="154.94" y2="18.796" width="0.254" layer="16"/>
-<wire x1="154.94" y1="18.796" x2="154.686" y2="18.796" width="0.254" layer="16"/>
-<wire x1="154.686" y1="18.796" x2="154.432" y2="19.05" width="0.254" layer="16"/>
-<wire x1="154.432" y1="19.05" x2="154.432" y2="19.812" width="0.254" layer="16"/>
-<wire x1="154.432" y1="19.812" x2="154.178" y2="20.066" width="0.254" layer="16"/>
-<wire x1="154.178" y1="20.066" x2="153.924" y2="20.066" width="0.254" layer="16"/>
-<wire x1="153.924" y1="20.066" x2="153.67" y2="19.812" width="0.254" layer="16"/>
-<wire x1="153.67" y1="19.812" x2="153.67" y2="19.05" width="0.254" layer="16"/>
-<wire x1="153.67" y1="19.05" x2="153.416" y2="18.796" width="0.254" layer="16"/>
-<wire x1="153.416" y1="18.796" x2="153.162" y2="18.796" width="0.254" layer="16"/>
-<wire x1="153.162" y1="18.796" x2="152.908" y2="19.05" width="0.254" layer="16"/>
-<wire x1="152.908" y1="19.05" x2="152.908" y2="19.812" width="0.254" layer="16"/>
-<wire x1="152.654" y1="20.066" x2="152.908" y2="19.812" width="0.254" layer="16"/>
-<wire x1="152.654" y1="20.066" x2="152.4" y2="20.066" width="0.254" layer="16"/>
-<wire x1="152.4" y1="20.066" x2="152.146" y2="19.812" width="0.254" layer="16"/>
-<wire x1="152.146" y1="19.812" x2="152.146" y2="19.05" width="0.254" layer="16"/>
-<wire x1="152.146" y1="19.05" x2="151.892" y2="18.796" width="0.254" layer="16"/>
-<wire x1="151.892" y1="18.796" x2="151.638" y2="18.796" width="0.254" layer="16"/>
-<wire x1="151.638" y1="18.796" x2="151.384" y2="19.05" width="0.254" layer="16"/>
-<wire x1="151.384" y1="19.05" x2="151.384" y2="19.812" width="0.254" layer="16"/>
-<wire x1="151.384" y1="19.812" x2="150.622" y2="20.574" width="0.254" layer="16"/>
-<wire x1="150.622" y1="20.574" x2="150.622" y2="21.253" width="0.254" layer="16"/>
-<wire x1="150.622" y1="21.253" x2="150.495" y2="21.38" width="0.254" layer="16"/>
-</signal>
-<signal name="+12V7">
-<contactref element="RJ45_POE_8" pad="5"/>
-<contactref element="RJ45_POE_8" pad="4"/>
 </signal>
 </signals>
 </board>
