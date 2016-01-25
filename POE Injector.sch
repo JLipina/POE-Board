@@ -160,70 +160,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="MRDT-2014-All">
-<packages>
-<package name="RJ45-CAT5E">
-<pad name="1" x="-4.445" y="4.655" drill="1"/>
-<pad name="3" x="-1.905" y="4.655" drill="1"/>
-<pad name="5" x="0.635" y="4.655" drill="1"/>
-<pad name="7" x="3.175" y="4.655" drill="1"/>
-<pad name="2" x="-3.175" y="7.195" drill="1"/>
-<pad name="4" x="-0.635" y="7.195" drill="1"/>
-<pad name="6" x="1.905" y="7.195" drill="1"/>
-<pad name="8" x="4.445" y="7.195" drill="1"/>
-<hole x="5.715" y="-1.695" drill="3.2"/>
-<hole x="-5.715" y="-1.695" drill="3.2"/>
-<wire x1="-8.92" y1="8.195" x2="8.92" y2="8.195" width="0.127" layer="51"/>
-<wire x1="-8.92" y1="8.195" x2="-8.92" y2="-8.195" width="0.127" layer="51"/>
-<wire x1="8.92" y1="8.195" x2="8.92" y2="-8.195" width="0.127" layer="51"/>
-<wire x1="8.92" y1="-8.195" x2="-8.92" y2="-8.195" width="0.127" layer="51"/>
-<text x="10" y="5" size="1.27" layer="25">&gt;NAME</text>
-<text x="10" y="3" size="1.27" layer="25">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="RJ45">
-<pin name="8" x="-5.08" y="0" length="middle"/>
-<pin name="7" x="-5.08" y="2.54" length="middle"/>
-<pin name="6" x="-5.08" y="5.08" length="middle"/>
-<pin name="5" x="-5.08" y="7.62" length="middle"/>
-<pin name="4" x="-5.08" y="10.16" length="middle"/>
-<pin name="3" x="-5.08" y="12.7" length="middle"/>
-<pin name="2" x="-5.08" y="15.24" length="middle"/>
-<pin name="1" x="-5.08" y="17.78" length="middle"/>
-<wire x1="-2.54" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
-<wire x1="17.78" y1="20.32" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
-<text x="0" y="22.86" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="RJ45">
-<gates>
-<gate name="G$1" symbol="RJ45" x="-7.62" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="RJ45-CAT5E">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -985,7 +921,7 @@ Org</text>
 </classes>
 <parts>
 <part name="RJ45_ETH_1" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
-<part name="RJ45_POE_1" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_POE_1" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="GND0" library="supply1" deviceset="GND" device=""/>
 <part name="+12V" library="supply1" deviceset="+12V" device=""/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
@@ -993,44 +929,44 @@ Org</text>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="U$17" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="12V_HORIZ"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_2" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_2" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_2" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_2" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_3" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_3" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_3" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_3" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="P+6" library="supply1" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_4" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_4" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_4" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_4" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_5" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_5" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_5" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_5" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_6" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_6" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_6" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_6" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+11" library="supply1" deviceset="+12V" device=""/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_7" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_7" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_7" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_7" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+13" library="supply1" deviceset="+12V" device=""/>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="RJ45_ETH_8" library="MRDT-2014-All" deviceset="RJ45" device=""/>
-<part name="RJ45_POE_8" library="MRDT-2014-All" deviceset="RJ45" device=""/>
+<part name="RJ45_ETH_8" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
+<part name="RJ45_POE_8" library="MRDT-2015-General" deviceset="RJ45" device="FCI-54602-908LF"/>
 <part name="P+15" library="supply1" deviceset="+12V" device=""/>
 <part name="P+16" library="supply1" deviceset="+12V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -1042,7 +978,7 @@ Org</text>
 </plain>
 <instances>
 <instance part="RJ45_ETH_1" gate="G$1" x="-83.82" y="66.04" rot="R270"/>
-<instance part="RJ45_POE_1" gate="G$1" x="-91.44" y="20.32" rot="R270"/>
+<instance part="RJ45_POE_1" gate="G$1" x="-81.28" y="15.24" rot="R90"/>
 <instance part="GND0" gate="1" x="-121.92" y="50.8" rot="R90"/>
 <instance part="+12V" gate="1" x="-119.38" y="55.88" rot="R270"/>
 <instance part="P+1" gate="1" x="-83.82" y="33.02"/>
@@ -1051,44 +987,44 @@ Org</text>
 <instance part="U$17" gate="GND" x="-144.78" y="50.8" rot="R180"/>
 <instance part="U$17" gate="VCC" x="-144.78" y="55.88" rot="R180"/>
 <instance part="GND2" gate="1" x="-91.44" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_2" gate="G$1" x="-45.72" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_2" gate="G$1" x="-63.5" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_2" gate="G$1" x="-55.88" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_2" gate="G$1" x="-53.34" y="15.24" rot="R90"/>
 <instance part="P+3" gate="1" x="-55.88" y="33.02"/>
 <instance part="P+4" gate="1" x="-53.34" y="33.02"/>
 <instance part="GND3" gate="1" x="-48.26" y="50.8"/>
 <instance part="GND4" gate="1" x="-63.5" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_3" gate="G$1" x="-17.78" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_3" gate="G$1" x="-35.56" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_3" gate="G$1" x="-27.94" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_3" gate="G$1" x="-25.4" y="15.24" rot="R90"/>
 <instance part="P+5" gate="1" x="-27.94" y="33.02"/>
 <instance part="P+6" gate="1" x="-25.4" y="33.02"/>
 <instance part="GND5" gate="1" x="-20.32" y="50.8"/>
 <instance part="GND6" gate="1" x="-35.56" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_4" gate="G$1" x="10.16" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_4" gate="G$1" x="-7.62" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_4" gate="G$1" x="0" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_4" gate="G$1" x="2.54" y="15.24" rot="R90"/>
 <instance part="P+7" gate="1" x="0" y="33.02"/>
 <instance part="P+8" gate="1" x="2.54" y="33.02"/>
 <instance part="GND7" gate="1" x="7.62" y="50.8"/>
 <instance part="GND8" gate="1" x="-7.62" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_5" gate="G$1" x="38.1" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_5" gate="G$1" x="20.32" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_5" gate="G$1" x="27.94" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_5" gate="G$1" x="30.48" y="15.24" rot="R90"/>
 <instance part="P+9" gate="1" x="27.94" y="33.02"/>
 <instance part="P+10" gate="1" x="30.48" y="33.02"/>
 <instance part="GND9" gate="1" x="35.56" y="50.8"/>
 <instance part="GND10" gate="1" x="20.32" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_6" gate="G$1" x="66.04" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_6" gate="G$1" x="48.26" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_6" gate="G$1" x="55.88" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_6" gate="G$1" x="58.42" y="15.24" rot="R90"/>
 <instance part="P+11" gate="1" x="55.88" y="33.02"/>
 <instance part="P+12" gate="1" x="58.42" y="33.02"/>
 <instance part="GND11" gate="1" x="63.5" y="50.8"/>
 <instance part="GND12" gate="1" x="48.26" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_7" gate="G$1" x="93.98" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_7" gate="G$1" x="76.2" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_7" gate="G$1" x="83.82" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_7" gate="G$1" x="86.36" y="15.24" rot="R90"/>
 <instance part="P+13" gate="1" x="83.82" y="33.02"/>
 <instance part="P+14" gate="1" x="86.36" y="33.02"/>
 <instance part="GND13" gate="1" x="91.44" y="50.8"/>
 <instance part="GND14" gate="1" x="76.2" y="30.48" rot="R180"/>
-<instance part="RJ45_ETH_8" gate="G$1" x="121.92" y="60.96" rot="R90"/>
-<instance part="RJ45_POE_8" gate="G$1" x="104.14" y="20.32" rot="R270"/>
+<instance part="RJ45_ETH_8" gate="G$1" x="111.76" y="66.04" rot="R270"/>
+<instance part="RJ45_POE_8" gate="G$1" x="114.3" y="15.24" rot="R90"/>
 <instance part="P+15" gate="1" x="111.76" y="33.02"/>
 <instance part="P+16" gate="1" x="114.3" y="33.02"/>
 <instance part="GND15" gate="1" x="119.38" y="50.8"/>
@@ -1103,7 +1039,7 @@ Org</text>
 <wire x1="-91.44" y1="58.42" x2="-91.44" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_1" gate="G$1" pin="1"/>
 <wire x1="-91.44" y1="43.18" x2="-73.66" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="43.18" x2="-73.66" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="43.18" x2="-73.66" y2="22.86" width="0.1524" layer="91"/>
 <label x="-78.74" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -1113,7 +1049,7 @@ Org</text>
 <wire x1="-88.9" y1="58.42" x2="-88.9" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_1" gate="G$1" pin="2"/>
 <wire x1="-88.9" y1="40.64" x2="-76.2" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="40.64" x2="-76.2" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="40.64" x2="-76.2" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_P_1" class="0">
@@ -1122,7 +1058,7 @@ Org</text>
 <wire x1="-86.36" y1="58.42" x2="-86.36" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_1" gate="G$1" pin="3"/>
 <wire x1="-86.36" y1="38.1" x2="-78.74" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="38.1" x2="-78.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="38.1" x2="-78.74" y2="22.86" width="0.1524" layer="91"/>
 <label x="-91.44" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -1134,19 +1070,19 @@ Org</text>
 <wire x1="-93.98" y1="53.34" x2="-93.98" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="33.02" x2="-86.36" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_1" gate="G$1" pin="6"/>
-<wire x1="-86.36" y1="33.02" x2="-86.36" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="33.02" x2="-86.36" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="RJ45_POE_1" gate="G$1" pin="8"/>
-<wire x1="-91.44" y1="25.4" x2="-91.44" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="22.86" x2="-91.44" y2="27.94" width="0.1524" layer="91"/>
 <label x="-91.44" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_1" gate="G$1" pin="7"/>
 <label x="-91.44" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="-88.9" y1="25.4" x2="-91.44" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-91.44" y="25.4"/>
+<wire x1="-88.9" y1="22.86" x2="-91.44" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-91.44" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_1" gate="G$1" pin="7"/>
@@ -1164,147 +1100,147 @@ Org</text>
 </segment>
 <segment>
 <pinref part="RJ45_POE_2" gate="G$1" pin="8"/>
-<wire x1="-63.5" y1="25.4" x2="-63.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="22.86" x2="-63.5" y2="27.94" width="0.1524" layer="91"/>
 <label x="-63.5" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_2" gate="G$1" pin="7"/>
 <label x="-63.5" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="-60.96" y1="25.4" x2="-63.5" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-63.5" y="25.4"/>
+<wire x1="-60.96" y1="22.86" x2="-63.5" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-63.5" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_2" gate="G$1" pin="7"/>
-<wire x1="-48.26" y1="55.88" x2="-48.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="58.42" x2="-48.26" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_2" gate="G$1" pin="8"/>
 <label x="-43.18" y="43.18" size="1.778" layer="95"/>
-<wire x1="-45.72" y1="55.88" x2="-48.26" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-48.26" y="55.88"/>
+<wire x1="-45.72" y1="58.42" x2="-48.26" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-48.26" y="58.42"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_3" gate="G$1" pin="8"/>
-<wire x1="-35.56" y1="25.4" x2="-35.56" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="22.86" x2="-35.56" y2="27.94" width="0.1524" layer="91"/>
 <label x="-35.56" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_3" gate="G$1" pin="7"/>
 <label x="-35.56" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="-33.02" y1="25.4" x2="-35.56" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-35.56" y="25.4"/>
+<wire x1="-33.02" y1="22.86" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-35.56" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_3" gate="G$1" pin="7"/>
-<wire x1="-20.32" y1="55.88" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="58.42" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_3" gate="G$1" pin="8"/>
 <label x="-15.24" y="43.18" size="1.778" layer="95"/>
-<wire x1="-17.78" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-20.32" y="55.88"/>
+<wire x1="-17.78" y1="58.42" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-20.32" y="58.42"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_4" gate="G$1" pin="8"/>
-<wire x1="-7.62" y1="25.4" x2="-7.62" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="22.86" x2="-7.62" y2="27.94" width="0.1524" layer="91"/>
 <label x="-7.62" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_4" gate="G$1" pin="7"/>
 <label x="-7.62" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="-5.08" y1="25.4" x2="-7.62" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-7.62" y="25.4"/>
+<wire x1="-5.08" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-7.62" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_4" gate="G$1" pin="7"/>
-<wire x1="7.62" y1="55.88" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="58.42" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_4" gate="G$1" pin="8"/>
 <label x="12.7" y="43.18" size="1.778" layer="95"/>
-<wire x1="10.16" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
-<junction x="7.62" y="55.88"/>
+<wire x1="10.16" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<junction x="7.62" y="58.42"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_5" gate="G$1" pin="8"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="20.32" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_5" gate="G$1" pin="7"/>
 <label x="20.32" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="22.86" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<junction x="20.32" y="25.4"/>
+<wire x1="22.86" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
+<junction x="20.32" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_5" gate="G$1" pin="7"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="58.42" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_5" gate="G$1" pin="8"/>
 <label x="40.64" y="43.18" size="1.778" layer="95"/>
-<wire x1="38.1" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
-<junction x="35.56" y="55.88"/>
+<wire x1="38.1" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<junction x="35.56" y="58.42"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_6" gate="G$1" pin="8"/>
-<wire x1="48.26" y1="25.4" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="22.86" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <label x="48.26" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_6" gate="G$1" pin="7"/>
 <label x="48.26" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="50.8" y1="25.4" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
-<junction x="48.26" y="25.4"/>
+<wire x1="50.8" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
+<junction x="48.26" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_6" gate="G$1" pin="7"/>
-<wire x1="63.5" y1="55.88" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="58.42" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_6" gate="G$1" pin="8"/>
 <label x="68.58" y="43.18" size="1.778" layer="95"/>
-<wire x1="66.04" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
-<junction x="63.5" y="55.88"/>
+<wire x1="66.04" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
+<junction x="63.5" y="58.42"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_7" gate="G$1" pin="8"/>
-<wire x1="76.2" y1="25.4" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="22.86" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
 <label x="76.2" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_7" gate="G$1" pin="7"/>
 <label x="76.2" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="78.74" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
-<junction x="76.2" y="25.4"/>
+<wire x1="78.74" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
+<junction x="76.2" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_7" gate="G$1" pin="7"/>
-<wire x1="91.44" y1="55.88" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_7" gate="G$1" pin="8"/>
 <label x="96.52" y="43.18" size="1.778" layer="95"/>
-<wire x1="93.98" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
-<junction x="91.44" y="55.88"/>
+<wire x1="93.98" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<junction x="91.44" y="58.42"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_8" gate="G$1" pin="8"/>
-<wire x1="104.14" y1="25.4" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="22.86" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <label x="104.14" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="RJ45_POE_8" gate="G$1" pin="7"/>
 <label x="104.14" y="30.48" size="1.778" layer="95" rot="R270"/>
-<wire x1="106.68" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<junction x="104.14" y="25.4"/>
+<wire x1="106.68" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
+<junction x="104.14" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RJ45_ETH_8" gate="G$1" pin="7"/>
-<wire x1="119.38" y1="55.88" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="58.42" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="RJ45_ETH_8" gate="G$1" pin="8"/>
 <label x="124.46" y="43.18" size="1.778" layer="95"/>
-<wire x1="121.92" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
-<junction x="119.38" y="55.88"/>
+<wire x1="121.92" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<junction x="119.38" y="58.42"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="RJ45_POE_1" gate="G$1" pin="5"/>
-<wire x1="-83.82" y1="25.4" x2="-83.82" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="22.86" x2="-83.82" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_1" gate="G$1" pin="4"/>
-<wire x1="-81.28" y1="25.4" x2="-81.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="22.86" x2="-81.28" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 </segment>
 <segment>
@@ -1314,352 +1250,352 @@ Org</text>
 </segment>
 <segment>
 <pinref part="RJ45_POE_2" gate="G$1" pin="5"/>
-<wire x1="-55.88" y1="25.4" x2="-55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="22.86" x2="-55.88" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_2" gate="G$1" pin="4"/>
-<wire x1="-53.34" y1="25.4" x2="-53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="22.86" x2="-53.34" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_3" gate="G$1" pin="5"/>
-<wire x1="-27.94" y1="25.4" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="22.86" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_3" gate="G$1" pin="4"/>
-<wire x1="-25.4" y1="25.4" x2="-25.4" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="22.86" x2="-25.4" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_4" gate="G$1" pin="5"/>
-<wire x1="0" y1="25.4" x2="0" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="0" y1="22.86" x2="0" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_4" gate="G$1" pin="4"/>
-<wire x1="2.54" y1="25.4" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="22.86" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_5" gate="G$1" pin="5"/>
-<wire x1="27.94" y1="25.4" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="22.86" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_5" gate="G$1" pin="4"/>
-<wire x1="30.48" y1="25.4" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="22.86" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_6" gate="G$1" pin="5"/>
-<wire x1="55.88" y1="25.4" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="22.86" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_6" gate="G$1" pin="4"/>
-<wire x1="58.42" y1="25.4" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="22.86" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+12" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_7" gate="G$1" pin="5"/>
-<wire x1="83.82" y1="25.4" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="22.86" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_7" gate="G$1" pin="4"/>
-<wire x1="86.36" y1="25.4" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="22.86" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+14" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_8" gate="G$1" pin="5"/>
-<wire x1="111.76" y1="25.4" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="22.86" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+15" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="RJ45_POE_8" gate="G$1" pin="4"/>
-<wire x1="114.3" y1="25.4" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="22.86" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+16" gate="1" pin="+12V"/>
 </segment>
 </net>
 <net name="TX_N_2" class="0">
 <segment>
 <pinref part="RJ45_ETH_2" gate="G$1" pin="2"/>
-<wire x1="-60.96" y1="55.88" x2="-60.96" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="58.42" x2="-60.96" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_2" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="40.64" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="40.64" x2="-48.26" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="40.64" x2="-48.26" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_2" class="0">
 <segment>
 <pinref part="RJ45_ETH_2" gate="G$1" pin="6"/>
-<wire x1="-50.8" y1="55.88" x2="-50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="58.42" x2="-50.8" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="53.34" x2="-66.04" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="53.34" x2="-66.04" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="33.02" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_2" gate="G$1" pin="6"/>
-<wire x1="-58.42" y1="33.02" x2="-58.42" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="33.02" x2="-58.42" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_N_3" class="0">
 <segment>
 <pinref part="RJ45_ETH_3" gate="G$1" pin="2"/>
-<wire x1="-33.02" y1="55.88" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="58.42" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_3" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="40.64" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="40.64" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_3" class="0">
 <segment>
 <pinref part="RJ45_ETH_3" gate="G$1" pin="6"/>
-<wire x1="-22.86" y1="55.88" x2="-22.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="58.42" x2="-22.86" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="53.34" x2="-38.1" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="53.34" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_3" gate="G$1" pin="6"/>
-<wire x1="-30.48" y1="33.02" x2="-30.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="33.02" x2="-30.48" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_N_4" class="0">
 <segment>
 <pinref part="RJ45_ETH_4" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="55.88" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="58.42" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_4" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="40.64" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="40.64" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_4" class="0">
 <segment>
 <pinref part="RJ45_ETH_4" gate="G$1" pin="6"/>
-<wire x1="5.08" y1="55.88" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="58.42" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="53.34" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="53.34" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="33.02" x2="-2.54" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_4" gate="G$1" pin="6"/>
-<wire x1="-2.54" y1="33.02" x2="-2.54" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="33.02" x2="-2.54" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_N_5" class="0">
 <segment>
 <pinref part="RJ45_ETH_5" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="55.88" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="58.42" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_5" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="40.64" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="40.64" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_5" class="0">
 <segment>
 <pinref part="RJ45_ETH_5" gate="G$1" pin="6"/>
-<wire x1="33.02" y1="55.88" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="58.42" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="53.34" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_5" gate="G$1" pin="6"/>
-<wire x1="25.4" y1="33.02" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="33.02" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_N_6" class="0">
 <segment>
 <pinref part="RJ45_ETH_6" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="58.42" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_6" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="40.64" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="40.64" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_6" class="0">
 <segment>
 <pinref part="RJ45_ETH_6" gate="G$1" pin="6"/>
-<wire x1="60.96" y1="55.88" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="58.42" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="53.34" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_6" gate="G$1" pin="6"/>
-<wire x1="53.34" y1="33.02" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="33.02" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_N_7" class="0">
 <segment>
 <pinref part="RJ45_ETH_7" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="55.88" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="58.42" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_7" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="40.64" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="40.64" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="40.64" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_7" class="0">
 <segment>
 <pinref part="RJ45_ETH_7" gate="G$1" pin="6"/>
-<wire x1="88.9" y1="55.88" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="58.42" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="53.34" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_7" gate="G$1" pin="6"/>
-<wire x1="81.28" y1="33.02" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="33.02" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_N_8" class="0">
 <segment>
 <pinref part="RJ45_ETH_8" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="55.88" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="58.42" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_8" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="40.64" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="40.64" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX_N_8" class="0">
 <segment>
 <pinref part="RJ45_ETH_8" gate="G$1" pin="6"/>
-<wire x1="116.84" y1="55.88" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="58.42" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="53.34" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_8" gate="G$1" pin="6"/>
-<wire x1="109.22" y1="33.02" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="33.02" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_P_2" class="0">
 <segment>
 <pinref part="RJ45_ETH_2" gate="G$1" pin="1"/>
-<wire x1="-63.5" y1="55.88" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="58.42" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_2" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="43.18" x2="-45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="43.18" x2="-45.72" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="43.18" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
 <label x="-50.8" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_2" class="0">
 <segment>
 <pinref part="RJ45_ETH_2" gate="G$1" pin="3"/>
-<wire x1="-58.42" y1="55.88" x2="-58.42" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="58.42" x2="-58.42" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_2" gate="G$1" pin="3"/>
 <wire x1="-58.42" y1="38.1" x2="-50.8" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="38.1" x2="-50.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="38.1" x2="-50.8" y2="22.86" width="0.1524" layer="91"/>
 <label x="-63.5" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_P_3" class="0">
 <segment>
 <pinref part="RJ45_ETH_3" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="55.88" x2="-35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="58.42" x2="-35.56" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_3" gate="G$1" pin="1"/>
 <wire x1="-35.56" y1="43.18" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="43.18" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="43.18" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
 <label x="-22.86" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_3" class="0">
 <segment>
 <pinref part="RJ45_ETH_3" gate="G$1" pin="3"/>
-<wire x1="-30.48" y1="55.88" x2="-30.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="58.42" x2="-30.48" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_3" gate="G$1" pin="3"/>
 <wire x1="-30.48" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="38.1" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="38.1" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
 <label x="-35.56" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_P_4" class="0">
 <segment>
 <pinref part="RJ45_ETH_4" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="55.88" x2="-7.62" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="58.42" x2="-7.62" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_4" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="43.18" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="43.18" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
 <label x="5.08" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_4" class="0">
 <segment>
 <pinref part="RJ45_ETH_4" gate="G$1" pin="3"/>
-<wire x1="-2.54" y1="55.88" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="58.42" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_4" gate="G$1" pin="3"/>
 <wire x1="-2.54" y1="38.1" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="38.1" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
 <label x="-7.62" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_P_5" class="0">
 <segment>
 <pinref part="RJ45_ETH_5" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="55.88" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="58.42" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_5" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="43.18" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="43.18" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
 <label x="33.02" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_5" class="0">
 <segment>
 <pinref part="RJ45_ETH_5" gate="G$1" pin="3"/>
-<wire x1="25.4" y1="55.88" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="58.42" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_5" gate="G$1" pin="3"/>
 <wire x1="25.4" y1="38.1" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="38.1" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="38.1" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <label x="20.32" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_P_6" class="0">
 <segment>
 <pinref part="RJ45_ETH_6" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="55.88" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="58.42" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_6" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="43.18" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="43.18" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 <label x="60.96" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_6" class="0">
 <segment>
 <pinref part="RJ45_ETH_6" gate="G$1" pin="3"/>
-<wire x1="53.34" y1="55.88" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_6" gate="G$1" pin="3"/>
 <wire x1="53.34" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="38.1" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
 <label x="48.26" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_P_7" class="0">
 <segment>
 <pinref part="RJ45_ETH_7" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_7" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="43.18" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="43.18" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
 <label x="88.9" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_7" class="0">
 <segment>
 <pinref part="RJ45_ETH_7" gate="G$1" pin="3"/>
-<wire x1="81.28" y1="55.88" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="58.42" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_7" gate="G$1" pin="3"/>
 <wire x1="81.28" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="88.9" y2="22.86" width="0.1524" layer="91"/>
 <label x="76.2" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_P_8" class="0">
 <segment>
 <pinref part="RJ45_ETH_8" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="55.88" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_8" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="43.18" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="43.18" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <label x="116.84" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_P_8" class="0">
 <segment>
 <pinref part="RJ45_ETH_8" gate="G$1" pin="3"/>
-<wire x1="109.22" y1="55.88" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="58.42" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RJ45_POE_8" gate="G$1" pin="3"/>
 <wire x1="109.22" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="38.1" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="38.1" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
 <label x="104.14" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
